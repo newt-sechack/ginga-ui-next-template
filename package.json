@@ -9,18 +9,18 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "ginga-ui": "^0.7.0",
+    "ginga-ui": "^0.7.1",
     "next": "15.1.3",
     "react": "^19.0.0",
     "react-dom": "^19.0.0"
   },
   "devDependencies": {
-    "@eslint/eslintrc": "^3",
-    "@types/node": "^20",
-    "@types/react": "^19",
-    "@types/react-dom": "^19",
-    "eslint": "^9",
+    "@eslint/eslintrc": "^3.2.0",
+    "@types/node": "^22.10.5",
+    "@types/react": "^19.0.2",
+    "@types/react-dom": "^19.0.2",
+    "eslint": "^9.17.0",
     "eslint-config-next": "15.1.3",
-    "typescript": "^5"
+    "typescript": "^5.7.2"
   }
 }
