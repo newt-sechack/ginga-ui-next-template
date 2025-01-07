@@ -1,3 +1,6 @@
+@import "ginga-ui/dist/variables.css";
+@import "ginga-ui/dist/style.css";
+
 :root {
   --background: #ffffff;
   --foreground: #171717;

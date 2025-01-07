@@ -1,13 +1,11 @@
 "use client";
 
-import { FormControl, Input } from "ginga-ui";
+import { Button } from "ginga-ui";
 
 export default function Home() {
   return (
     <div>
-      <FormControl title="Label">
-        <Input />
-      </FormControl>
+      <Button>Click me</Button>
     </div>
   );
 }

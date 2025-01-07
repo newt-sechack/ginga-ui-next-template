@@ -9,8 +9,8 @@ importers:
   .:
     dependencies:
       ginga-ui:
-        specifier: ^0.7.1
-        version: 0.7.1(react-dom@19.0.0(react@19.0.0))(react@19.0.0)(typescript@5.7.2)
+        specifier: ^0.7.5
+        version: 0.7.5(react-dom@19.0.0(react@19.0.0))(react@19.0.0)(typescript@5.7.2)
       next:
         specifier: 15.1.3
         version: 15.1.3(react-dom@19.0.0(react@19.0.0))(react@19.0.0)
@@ -861,8 +861,8 @@ packages:
   '@types/node-fetch@2.6.12':
     resolution: {integrity: sha512-8nneRWKCg3rMtF69nLQJnOYUcbafYeFSjqkw3jCRLsqkWFlHaoQrr5mXmofFGOx3DKn7UfmBMyov8ySvLRVldA==}
 
-  '@types/node@18.19.69':
-    resolution: {integrity: sha512-ECPdY1nlaiO/Y6GUnwgtAAhLNaQ53AyIVz+eILxpEo5OvuqE6yWkqWBIb5dU0DqhKQtMeny+FBD3PK6lm7L5xQ==}
+  '@types/node@18.19.70':
+    resolution: {integrity: sha512-RE+K0+KZoEpDUbGGctnGdkrLFwi1eYKTlIHNl2Um98mUkGsm1u2Ff6Ltd0e8DktTtC98uy7rSj+hO8t/QuLoVQ==}
 
   '@types/node@22.10.5':
     resolution: {integrity: sha512-F8Q+SeGimwOo86fiovQh8qiXfFEh2/ocYv7tU5pJ3EXMSSxk1Joj5wefpFK2fHTf/N6HKGSxIDBT9f3gCxXPkQ==}
@@ -1384,11 +1384,11 @@ packages:
   get-tsconfig@4.8.1:
     resolution: {integrity: sha512-k9PN+cFBmaLWtVz29SkUoqU5O0slLuHJXt/2P+tMVFT+phsSGXGkp9t3rQIqdz0e+06EHNGs3oM6ZX1s2zHxRg==}
 
-  ginga-ui@0.7.1:
-    resolution: {integrity: sha512-tsjxz4+14OvltPStVhNQXByZ0ePAryORVkIGzY7haui/TcEW5/XWaRxEb0/FLwFiLDX2Nkid1mZg4LXIGknUdw==}
+  ginga-ui@0.7.5:
+    resolution: {integrity: sha512-60h5VUvHAuO3xYp3e7mCjDgWv1sAS8yc/Gcp6sZXTYmsCxfst95MZkJmRc/7GFDDTt0XZWAnoqGNA4I6Z4alSw==}
     peerDependencies:
-      react: ^18.0.0 || ^19.0.0
-      react-dom: ^18.0.0 || ^19.0.0
+      react: ^17.0.0  || ^18.0.0  || ^19.0.0
+      react-dom: ^17.0.0  || ^18.0.0  || ^19.0.0
 
   glob-parent@5.1.2:
     resolution: {integrity: sha512-AOIgSQCepiJYwP3ARnGx+5VnTu2HBYdzbGP45eLw1vr3zB3vZLeyed1sC9hnbcOc9/SrMyM5RPQrkGz4aS9Zow==}
@@ -3311,7 +3311,7 @@ snapshots:
       '@types/node': 22.10.5
       form-data: 4.0.1
 
-  '@types/node@18.19.69':
+  '@types/node@18.19.70':
     dependencies:
       undici-types: 5.26.5
 
@@ -4059,12 +4059,13 @@ snapshots:
     dependencies:
       resolve-pkg-maps: 1.0.0
 
-  ginga-ui@0.7.1(react-dom@19.0.0(react@19.0.0))(react@19.0.0)(typescript@5.7.2):
+  ginga-ui@0.7.5(react-dom@19.0.0(react@19.0.0))(react@19.0.0)(typescript@5.7.2):
     dependencies:
       '@google/generative-ai': 0.21.0
       chroma-js: 3.1.2
       openai: 4.77.3
       react: 19.0.0
+      react-aria: 3.36.0(react-dom@19.0.0(react@19.0.0))(react@19.0.0)
       react-aria-components: 1.5.0(react-dom@19.0.0(react@19.0.0))(react@19.0.0)
       react-dom: 19.0.0(react@19.0.0)
       valibot: 1.0.0-beta.9(typescript@5.7.2)
@@ -4419,7 +4420,7 @@ snapshots:
 
   openai@4.77.3:
     dependencies:
-      '@types/node': 18.19.69
+      '@types/node': 18.19.70
       '@types/node-fetch': 2.6.12
       abort-controller: 3.0.0
       agentkeepalive: 4.6.0
