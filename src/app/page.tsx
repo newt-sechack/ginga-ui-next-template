@@ -1,5 +1,3 @@
-"use client";
-
 import { Button } from "ginga-ui";
 
 export default function Home() {
