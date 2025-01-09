@@ -7,8 +7,11 @@ export default async function Home() {
     apiKey: process.env.OPENAI_API_KEY!,
   });
 
+  const { CSSCode } = await themeClient.generateTheme("fairy tale");
+
   return (
     <div>
+      <style>{CSSCode}</style>
       <Button>aaas</Button>
     </div>
   );
