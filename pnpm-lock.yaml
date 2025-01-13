@@ -9,8 +9,8 @@ importers:
   .:
     dependencies:
       ginga-ui:
-        specifier: ^0.7.9
-        version: 0.7.9(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.7.3)
+        specifier: ^0.7.10
+        version: 0.7.10(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.7.3)
       next:
         specifier: 14.2.22
         version: 14.2.22(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
@@ -1306,8 +1306,8 @@ packages:
   get-tsconfig@4.8.1:
     resolution: {integrity: sha512-k9PN+cFBmaLWtVz29SkUoqU5O0slLuHJXt/2P+tMVFT+phsSGXGkp9t3rQIqdz0e+06EHNGs3oM6ZX1s2zHxRg==}
 
-  ginga-ui@0.7.9:
-    resolution: {integrity: sha512-RLaVdnjxnb2xbCnYJ1GKplzHcEmb3OYOf2JHZg5paouJ7ee585V4+PR2PTAoDv0SThj3T0Hl57Q4m3NBmI4tAA==}
+  ginga-ui@0.7.10:
+    resolution: {integrity: sha512-hj76STXGRJaC6pSVIB10Q/0i6Tb3ZytjbV18GgHKsVUsQ3WEAy06OlqD1r/sM7A9EYbvZKM7BtAaAkouQxkPsg==}
     peerDependencies:
       react: ^18.0.0
       react-dom: ^18.0.0
@@ -3955,7 +3955,7 @@ snapshots:
     dependencies:
       resolve-pkg-maps: 1.0.0
 
-  ginga-ui@0.7.9(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.7.3):
+  ginga-ui@0.7.10(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.7.3):
     dependencies:
       '@google/generative-ai': 0.21.0
       chroma-js: 3.1.2

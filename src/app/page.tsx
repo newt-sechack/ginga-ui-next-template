@@ -1,4 +1,4 @@
-import { Button } from "ginga-ui/core";
+import { Button, FormControl, Input } from "ginga-ui/core";
 import ThemeClient from "ginga-ui/ai";
 
 export default async function Home() {
@@ -7,12 +7,15 @@ export default async function Home() {
     apiKey: process.env.OPENAI_API_KEY!,
   });
 
-  const { CSSCode } = await themeClient.generateTheme("fairy tale");
+  const { CSSCode } = await themeClient.generateTheme("halloween");
 
   return (
     <div>
-      <style>{CSSCode}</style>
+      <style suppressHydrationWarning>{CSSCode}</style>
       <Button>aaas</Button>
+      <FormControl title="Name">
+        <Input type="text" />
+      </FormControl>
     </div>
   );
 }
