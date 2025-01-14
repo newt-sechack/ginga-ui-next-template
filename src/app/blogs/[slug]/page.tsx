@@ -1,5 +1,8 @@
 import { cmsClient } from "#/libs/client";
 import { Heading } from "ginga-ui/core";
+import { marked } from "marked";
+import DOMPurify from "dompurify";
+import { JSDOM } from "jsdom";
 
 type Props = {
   id: string;
@@ -22,11 +25,15 @@ export default async function ArticlePage({
 }) {
   const { id } = await params;
   const post = await getBlogPostByID(id);
+  const content = await marked.parse(post.content);
+  const sanitizedContent = DOMPurify(
+    new JSDOM("<!DOCTYPE html>").window
+  ).sanitize(content);
 
   return (
     <div>
       <Heading level="h2">{post.title}</Heading>
-      <div dangerouslySetInnerHTML={{ __html: post.content }}></div>
+      <div dangerouslySetInnerHTML={{ __html: sanitizedContent }}></div>
     </div>
   );
 }
