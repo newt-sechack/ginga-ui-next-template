@@ -9,7 +9,10 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "dompurify": "^3.2.3",
     "ginga-ui": "^0.7.10",
+    "jsdom": "^26.0.0",
+    "marked": "^15.0.6",
     "microcms-js-sdk": "^3.1.2",
     "next": "14.2.22",
     "react": "^18.3.1",
