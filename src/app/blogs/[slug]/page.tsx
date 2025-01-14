@@ -26,7 +26,7 @@ export default async function ArticlePage({
   return (
     <div>
       <Heading level="h2">{post.title}</Heading>
-      {post.content}
+      <div dangerouslySetInnerHTML={{ __html: post.content }}></div>
     </div>
   );
 }
