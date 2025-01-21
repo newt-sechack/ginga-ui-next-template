@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import "./globals.css";
 import "ginga-ui/style.css";
 import "ginga-ui/variables.css";
 
