@@ -10,13 +10,15 @@
   },
   "dependencies": {
     "dompurify": "^3.2.3",
-    "ginga-ui": "^0.7.10",
+    "ginga-ui": "^0.7.11",
     "jsdom": "^26.0.0",
-    "marked": "^15.0.6",
     "microcms-js-sdk": "^3.1.2",
     "next": "14.2.22",
     "react": "^18.3.1",
-    "react-dom": "^18.3.1"
+    "react-dom": "^18.3.1",
+    "react-markdown": "^9.0.3",
+    "remark-gfm": "^4.0.0",
+    "remark-html": "^16.0.1"
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3.2.0",
