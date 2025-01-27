@@ -1,8 +1,7 @@
 import { cmsClient } from "#/libs/client";
-import { Heading, Link } from "ginga-ui/core";
-import remarkGfm from "remark-gfm";
-import Markdown from "react-markdown";
-import remarkHtml from "remark-html";
+import { Heading } from "ginga-ui/core";
+import { htmlToComponents } from "#/components/Markdown";
+import ThemeClient from "ginga-ui/ai";
 
 type Props = {
   id: string;
@@ -26,14 +25,20 @@ export default async function ArticlePage({
   const { id } = await params;
   const post = await getBlogPostByID(id);
 
+  const themeClient = new ThemeClient({
+    clientType: "openai",
+    apiKey: process.env.OPENAI_API_KEY!,
+  });
+
+  const { CSSCode } = await themeClient.generateTheme(post.content);
+  const Output = () => htmlToComponents(`<div>${post.content}</div>`);
+  console.log(post.content);
+
   return (
     <div>
-      <Heading level="h2">{post.title}</Heading>
-      <Markdown
-        remarkPlugins={[[remarkGfm, { singleTilde: false }], remarkHtml]}
-      >
-        {post.content}
-      </Markdown>
+      <style suppressHydrationWarning>{CSSCode}</style>
+      <Heading level="h1">{post.title}</Heading>
+      <Output />
     </div>
   );
 }
