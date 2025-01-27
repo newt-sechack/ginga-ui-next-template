@@ -24,7 +24,7 @@ export default async function BlogListPage() {
       <ul>
         {posts.map((post) => (
           <li>
-            <a href={`/blogs/${post.id}`}>{post.title}</a>
+            <a href={`posts/${post.id}`}>{post.title}</a>
           </li>
         ))}
       </ul>

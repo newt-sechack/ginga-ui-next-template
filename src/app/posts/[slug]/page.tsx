@@ -1,5 +1,5 @@
 import { cmsClient } from "#/libs/client";
-import { Heading } from "ginga-ui/core";
+import { Box, Heading } from "ginga-ui/core";
 import { htmlToComponents } from "#/components/Markdown";
 import ThemeClient from "ginga-ui/ai";
 
@@ -14,16 +14,17 @@ async function getBlogPostByID(id: string): Promise<Props> {
     endpoint: "blogs",
     contentId: id,
   });
-  return data.contents[0];
+  console.log(data);
+  return data;
 }
 
 export default async function ArticlePage({
   params,
 }: {
-  params: Promise<{ id: string }>;
+  params: Promise<{ slug: string }>;
 }) {
-  const { id } = await params;
-  const post = await getBlogPostByID(id);
+  const { slug } = await params;
+  const post = await getBlogPostByID(slug);
 
   const themeClient = new ThemeClient({
     clientType: "openai",
@@ -34,10 +35,10 @@ export default async function ArticlePage({
   const Output = () => htmlToComponents(post.content);
 
   return (
-    <div>
+    <Box>
       <style suppressHydrationWarning>{CSSCode}</style>
       <Heading level="h1">{post.title}</Heading>
       <Output />
-    </div>
+    </Box>
   );
 }
