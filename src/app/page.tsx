@@ -1,4 +1,3 @@
-import { Button, FormControl, Input } from "ginga-ui/core";
 import ThemeClient from "ginga-ui/ai";
 
 export default async function Home() {
@@ -12,10 +11,7 @@ export default async function Home() {
   return (
     <div>
       <style suppressHydrationWarning>{CSSCode}</style>
-      <Button>aaas</Button>
-      <FormControl title="Name">
-        <Input type="text" />
-      </FormControl>
+      <h1>Happy Halloween!</h1>
     </div>
   );
 }
