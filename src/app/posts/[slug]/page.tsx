@@ -31,8 +31,7 @@ export default async function ArticlePage({
   });
 
   const { CSSCode } = await themeClient.generateTheme(post.content);
-  const Output = () => htmlToComponents(`<div>${post.content}</div>`);
-  console.log(post.content);
+  const Output = () => htmlToComponents(post.content);
 
   return (
     <div>

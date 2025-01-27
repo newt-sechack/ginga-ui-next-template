@@ -1,4 +1,4 @@
-import { Heading, Paragraph } from "ginga-ui/core";
+import { Heading, Paragraph, Image, List, Link } from "ginga-ui/core";
 import React from "react";
 import rehypeReact from "rehype-react";
 import rehypeParse from "rehype-parse";
@@ -26,9 +26,25 @@ const HeadingLevel4 = (
   props: Omit<React.ComponentProps<typeof Heading>, "level">
 ) => <Heading level="h4" {...props} />;
 
+const ImageWrapper = (props: React.ComponentProps<"img">) => (
+  <Image {...props} />
+);
+
+const ListWrapper = (props: React.ComponentProps<"ul">) => (
+  <List type="unordered" {...props} />
+);
+
+const ListItemWrapper = (props: React.ComponentProps<"li">) => (
+  <List.Item {...props} />
+);
+
+const AnchorWrapper = (
+  props: Omit<React.ComponentProps<"a">, "onFocus" | "onBlur">
+) => <Link {...props} />;
+
 export const htmlToComponents = (html: string) => {
   return unified()
-    .use(rehypeParse, { fragment: true }) // fragmentは必ずtrueにする
+    .use(rehypeParse, { fragment: true })
     .use(rehypeReact, {
       Fragment: prod.Fragment,
       jsx: prod.jsx,
@@ -39,6 +55,9 @@ export const htmlToComponents = (html: string) => {
         h2: HeadingLevel2,
         h3: HeadingLevel3,
         h4: HeadingLevel4,
+        img: ImageWrapper,
+        ul: ListWrapper,
+        a: AnchorWrapper,
       },
     })
     .processSync(html).result;
