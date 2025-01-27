@@ -4,6 +4,7 @@ import rehypeReact from "rehype-react";
 import rehypeParse from "rehype-parse";
 import * as prod from "react/jsx-runtime";
 import { unified } from "unified";
+import rehypeSanitize from "rehype-sanitize";
 
 // HTMLをReactコンポーネントに変換
 const ParagraphWrapper = (props: React.ComponentProps<typeof Paragraph>) => (
@@ -45,6 +46,7 @@ const AnchorWrapper = (
 export const htmlToComponents = (html: string) => {
   return unified()
     .use(rehypeParse, { fragment: true })
+    .use(rehypeSanitize)
     .use(rehypeReact, {
       Fragment: prod.Fragment,
       jsx: prod.jsx,
