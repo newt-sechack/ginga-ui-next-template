@@ -1,5 +1,5 @@
 import { getBlogPosts } from "#/libs/cms";
-import { Heading, Link, List } from "ginga-ui";
+import { Link, List } from "ginga-ui";
 import ThemeClient from "ginga-ui/ai";
 
 export default async function Home() {
