@@ -1,7 +1,7 @@
-import { cmsClient } from "#/libs/cms";
-import { Box, Heading, Link } from "ginga-ui/core";
 import { htmlToComponents } from "#/components/Markdown";
+import { cmsClient } from "#/libs/cms";
 import ThemeClient from "ginga-ui/ai";
+import { Box, Heading, Link } from "ginga-ui/core";
 
 import styles from "./page.module.css";
 
@@ -39,7 +39,7 @@ export default async function ArticlePage({
   return (
     <Box>
       <style suppressHydrationWarning>{CSSCode}</style>
-      <Heading level="h1">{post.title}</Heading>
+      <Heading level="h2">{post.title}</Heading>
       <Output />
       <Box className={styles["post-footer"]}>
         <Link href="/">Back to list</Link>
