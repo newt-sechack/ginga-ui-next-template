@@ -5,6 +5,7 @@ import { Box, Button, Heading, Input } from "ginga-ui";
 
 import "./styles.css";
 import styles from "./layout.module.css";
+import Search from "./_components/Search";
 
 export const metadata: Metadata = {
   title: "Ginga Blog",
@@ -21,10 +22,7 @@ export default async function RootLayout({
       <body>
         <header className={styles.header}>
           <Heading level="h1">Ginga Blog</Heading>
-          <Box className={styles["search-area"]}>
-            <Input placeholder="Search" />
-            <Button>Search</Button>
-          </Box>
+          <Search />
         </header>
         {children}
       </body>

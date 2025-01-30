@@ -9,9 +9,3 @@
   border: var(--width-border) solid var(--color-primary-9);
   border-radius: var(--radius-size);
 }
-
-.search-area {
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-}
