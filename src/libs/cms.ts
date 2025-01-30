@@ -8,6 +8,7 @@ export const cmsClient = createClient({
 type Props = {
   id: string;
   title: string;
+  content: string;
 };
 
 export async function getBlogPosts(): Promise<Props[]> {
@@ -17,7 +18,7 @@ export async function getBlogPosts(): Promise<Props[]> {
     },
     endpoint: "blogs",
     queries: {
-      fields: "id,title",
+      fields: "id,title,content",
       limit: 5,
     },
   });

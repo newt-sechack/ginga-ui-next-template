@@ -9,9 +9,14 @@ export default async function Home() {
     clientType: "openai",
     apiKey: process.env.OPENAI_API_KEY!,
   });
-  const { CSSCode } = await themeClient.generateTheme("halloween");
 
   const posts = await getBlogPosts();
+
+  const { CSSCode } = await themeClient.generateTheme(
+    `Blog page like below posts: \n\n${posts
+      .map((post) => post.content)
+      .join("\n")}`
+  );
 
   return (
     <>
