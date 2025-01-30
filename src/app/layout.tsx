@@ -1,14 +1,17 @@
-import type { Metadata } from "next";
+import { Heading } from "ginga-ui";
 import "ginga-ui/style.css";
 import "ginga-ui/variables.css";
-import { Box, Button, Heading, Input } from "ginga-ui";
+import type { Metadata } from "next";
 
-import "./styles.css";
-import styles from "./layout.module.css";
 import Search from "./_components/Search";
+import styles from "./layout.module.css";
+import "./styles.css";
 
 export const metadata: Metadata = {
-  title: "Ginga Blog",
+  title: {
+    template: "%s | Ginga Blog",
+    default: "Ginga Blog",
+  },
   description: "Created with ginga-ui",
 };
 

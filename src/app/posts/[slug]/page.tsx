@@ -3,20 +3,29 @@ import { cmsClient, getBlogPosts } from "#/libs/cms";
 import ThemeClient from "ginga-ui/ai";
 import { Box, Heading, Link } from "ginga-ui/core";
 
+import { Metadata } from "next/types";
 import styles from "./page.module.css";
 
-type Props = {
-  id: string;
-  title: string;
-  content: string;
-};
-
-async function getBlogPostByID(id: string): Promise<Props> {
-  const data = await cmsClient.get({
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ slug: string }>;
+}): Promise<Metadata> {
+  const { slug } = await params;
+  const post = await await cmsClient.get({
     endpoint: "blogs",
-    contentId: id,
+    contentId: slug,
   });
-  return data;
+
+  if (!post) {
+    return {
+      title: "お知らせが見つかりませんでした",
+    };
+  }
+
+  return {
+    title: post.title,
+  };
 }
 
 export default async function ArticlePage({
@@ -25,7 +34,10 @@ export default async function ArticlePage({
   params: Promise<{ slug: string }>;
 }) {
   const { slug } = await params;
-  const post = await getBlogPostByID(slug);
+  const post = await await cmsClient.get({
+    endpoint: "blogs",
+    contentId: slug,
+  });
 
   const themeClient = new ThemeClient({
     clientType: "openai",
