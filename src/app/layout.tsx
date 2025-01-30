@@ -1,11 +1,10 @@
 import type { Metadata } from "next";
 import "ginga-ui/style.css";
 import "ginga-ui/variables.css";
-import { Heading, Input } from "ginga-ui";
+import { Box, Button, Heading, Input } from "ginga-ui";
 
 import "./styles.css";
 import styles from "./layout.module.css";
-import { getBlogPosts } from "#/libs/cms";
 
 export const metadata: Metadata = {
   title: "Ginga Blog",
@@ -22,9 +21,10 @@ export default async function RootLayout({
       <body>
         <header className={styles.header}>
           <Heading level="h1">Ginga Blog</Heading>
-          <div>
+          <Box className={styles["search-area"]}>
             <Input placeholder="Search" />
-          </div>
+            <Button>Search</Button>
+          </Box>
         </header>
         {children}
       </body>

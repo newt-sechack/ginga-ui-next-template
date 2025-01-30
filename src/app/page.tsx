@@ -14,7 +14,6 @@ export default async function Home() {
   return (
     <>
       <style suppressHydrationWarning>{CSSCode}</style>
-      <Heading level="h1">Happy Halloween!</Heading>
       <List>
         {posts.map((post) => (
           <li key={post.id}>
