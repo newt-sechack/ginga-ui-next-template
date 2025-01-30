@@ -11,7 +11,10 @@ type Props = {
 };
 
 export async function getBlogPosts(): Promise<Props[]> {
-  const data = await cmsClient.get({
+  const data = await cmsClient.getList({
+    customRequestInit: {
+      cache: "no-cache",
+    },
     endpoint: "blogs",
     queries: {
       fields: "id,title",

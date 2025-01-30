@@ -1,6 +1,8 @@
 import { getBlogPosts } from "#/libs/cms";
 import { Link, List } from "ginga-ui";
 
+export const dynamic = "force-static";
+
 export default async function BlogListPage() {
   const posts = await getBlogPosts();
 

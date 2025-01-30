@@ -2,6 +2,8 @@ import { getBlogPosts } from "#/libs/cms";
 import { Link, List } from "ginga-ui";
 import ThemeClient from "ginga-ui/ai";
 
+export const dynamic = "force-static";
+
 export default async function Home() {
   const themeClient = new ThemeClient({
     clientType: "openai",

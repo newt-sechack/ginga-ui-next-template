@@ -1,5 +1,5 @@
 import { htmlToComponents } from "#/components/Markdown";
-import { cmsClient } from "#/libs/cms";
+import { cmsClient, getBlogPosts } from "#/libs/cms";
 import ThemeClient from "ginga-ui/ai";
 import { Box, Heading, Link } from "ginga-ui/core";
 
@@ -16,7 +16,6 @@ async function getBlogPostByID(id: string): Promise<Props> {
     endpoint: "blogs",
     contentId: id,
   });
-  console.log(data);
   return data;
 }
 
@@ -46,4 +45,12 @@ export default async function ArticlePage({
       </Box>
     </Box>
   );
+}
+
+export async function generateStaticParams() {
+  const posts = await getBlogPosts();
+
+  return posts.map((item) => ({
+    slug: item.id,
+  }));
 }
