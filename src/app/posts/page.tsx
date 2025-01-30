@@ -1,17 +1,18 @@
 import { getBlogPosts } from "#/libs/cms";
+import { Link, List } from "ginga-ui";
 
 export default async function BlogListPage() {
   const posts = await getBlogPosts();
 
   return (
     <div>
-      <ul>
+      <List>
         {posts.map((post) => (
           <li>
-            <a href={`posts/${post.id}`}>{post.title}</a>
+            <Link href={`posts/${post.id}`}>{post.title}</Link>
           </li>
         ))}
-      </ul>
+      </List>
     </div>
   );
 }

@@ -42,7 +42,7 @@ export default async function ArticlePage({
       <Heading level="h1">{post.title}</Heading>
       <Output />
       <Box className={styles["post-footer"]}>
-        <Link href="/posts">Back to list</Link>
+        <Link href="/">Back to list</Link>
       </Box>
     </Box>
   );
