@@ -1,20 +1,33 @@
 import type { Metadata } from "next";
 import "ginga-ui/style.css";
 import "ginga-ui/variables.css";
+import { Heading, Input } from "ginga-ui";
+
+import "./styles.css";
+import styles from "./layout.module.css";
+import { getBlogPosts } from "#/libs/cms";
 
 export const metadata: Metadata = {
-  title: "GingaUI Example Blog",
+  title: "Ginga Blog",
   description: "Created with ginga-ui",
 };
 
-export default function RootLayout({
+export default async function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
   return (
     <html lang="ja">
-      <body>{children}</body>
+      <body>
+        <header className={styles.header}>
+          <Heading level="h1">Ginga Blog</Heading>
+          <div>
+            <Input placeholder="Search" />
+          </div>
+        </header>
+        {children}
+      </body>
     </html>
   );
 }

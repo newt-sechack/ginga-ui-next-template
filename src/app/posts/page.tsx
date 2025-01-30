@@ -1,20 +1,4 @@
-import { cmsClient } from "#/libs/client";
-
-type Props = {
-  id: string;
-  title: string;
-};
-
-async function getBlogPosts(): Promise<Props[]> {
-  const data = await cmsClient.get({
-    endpoint: "blogs",
-    queries: {
-      fields: "id,title",
-      limit: 5,
-    },
-  });
-  return data.contents;
-}
+import { getBlogPosts } from "#/libs/cms";
 
 export default async function BlogListPage() {
   const posts = await getBlogPosts();

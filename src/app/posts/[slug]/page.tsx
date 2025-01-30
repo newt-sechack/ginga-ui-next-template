@@ -1,4 +1,4 @@
-import { cmsClient } from "#/libs/client";
+import { cmsClient } from "#/libs/cms";
 import { Box, Heading } from "ginga-ui/core";
 import { htmlToComponents } from "#/components/Markdown";
 import ThemeClient from "ginga-ui/ai";
