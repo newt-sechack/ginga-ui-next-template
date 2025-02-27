@@ -24,7 +24,9 @@ export default async function RootLayout({
     <html lang="ja">
       <body>
         <header className={styles.header}>
-          <Heading level="h1">Ginga Blog</Heading>
+          <Heading level="h1" className={styles.title}>
+            Ginga Blog
+          </Heading>
           <Search />
         </header>
         {children}

@@ -1,7 +1,7 @@
 import { htmlToComponents } from "#/components/Markdown";
 import { cmsClient, getBlogPosts } from "#/libs/cms";
 import ThemeClient from "ginga-ui/ai";
-import { Box, Heading, Link } from "ginga-ui/core";
+import { Box, Heading, Image, Link } from "ginga-ui/core";
 
 import { Metadata } from "next/types";
 import styles from "./page.module.css";
@@ -35,6 +35,9 @@ export default async function ArticlePage({
 }) {
   const { slug } = await params;
   const post = await await cmsClient.get({
+    customRequestInit: {
+      cache: "no-cache",
+    },
     endpoint: "blogs",
     contentId: slug,
   });
@@ -50,7 +53,22 @@ export default async function ArticlePage({
   return (
     <Box>
       <style suppressHydrationWarning>{CSSCode}</style>
-      <Heading level="h2">{post.title}</Heading>
+      <Image
+        src={post.eyecatch.url}
+        alt={post.title}
+        className={styles["eyecatch"]}
+      />
+      <Heading level="h2" className={styles.title}>
+        {post.title}
+      </Heading>
+      <div className={styles["author"]}>
+        <Image
+          src="https://newt239.dev/icon.webp"
+          variant="avatar"
+          className={styles["avatar"]}
+        />
+        newt
+      </div>
       <Output />
       <Box className={styles["post-footer"]}>
         <Link href="/">Back to list</Link>
