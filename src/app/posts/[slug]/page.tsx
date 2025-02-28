@@ -1,7 +1,7 @@
 import { htmlToComponents } from "#/components/Markdown";
 import { cmsClient, getBlogPosts } from "#/libs/cms";
-import ThemeClient from "ginga-ui/ai";
-import { Box, Heading, Image, Link } from "ginga-ui/core";
+import ThemeClient from "@ginga-ui/ai";
+import { Box, Heading, Image, Link } from "@ginga-ui/core";
 
 import { Metadata } from "next/types";
 import styles from "./page.module.css";

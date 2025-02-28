@@ -9,7 +9,8 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "ginga-ui": "^0.8.0",
+    "@ginga-ui/core": "^0.9.7",
+    "ginga-ui": "^0.8.1",
     "microcms-js-sdk": "^3.1.2",
     "next": "14.2.22",
     "react": "^18.3.1",

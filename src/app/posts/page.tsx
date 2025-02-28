@@ -1,5 +1,5 @@
 import { getBlogPosts } from "#/libs/cms";
-import { Link, List } from "ginga-ui";
+import { Link, List } from "@ginga-ui";
 import { Metadata } from "next";
 
 export const dynamic = "force-static";

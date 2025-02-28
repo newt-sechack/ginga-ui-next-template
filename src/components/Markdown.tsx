@@ -1,10 +1,10 @@
-import { Heading, Paragraph, Image, List, Link } from "ginga-ui/core";
+import { Heading, Image, Link, List, Paragraph } from "@ginga-ui/core";
 import React from "react";
-import rehypeReact from "rehype-react";
-import rehypeParse from "rehype-parse";
 import * as prod from "react/jsx-runtime";
-import { unified } from "unified";
+import rehypeParse from "rehype-parse";
+import rehypeReact from "rehype-react";
 import rehypeSanitize from "rehype-sanitize";
+import { unified } from "unified";
 
 // HTMLをReactコンポーネントに変換
 const ParagraphWrapper = (props: React.ComponentProps<typeof Paragraph>) => (

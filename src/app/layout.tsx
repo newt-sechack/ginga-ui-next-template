@@ -1,6 +1,6 @@
-import { Heading } from "ginga-ui";
-import "ginga-ui/style.css";
-import "ginga-ui/variables.css";
+import { Heading } from "@ginga-ui/core";
+import "@ginga-ui/core/style.css";
+import "@ginga-ui/variables.css";
 import type { Metadata } from "next";
 
 import Search from "./_components/Search";

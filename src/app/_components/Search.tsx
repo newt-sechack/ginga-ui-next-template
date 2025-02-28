@@ -1,4 +1,4 @@
-import { Box, Input, Button } from "ginga-ui/core";
+import { Box, Button, Input } from "@ginga-ui/core";
 
 import styles from "./Search.module.css";
 
