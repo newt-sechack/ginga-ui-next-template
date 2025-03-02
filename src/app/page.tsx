@@ -1,16 +1,15 @@
 import { getBlogPosts } from "#/libs/cms";
-import { Link, List, ThemeClient } from "@ginga-ui/core";
+import { Anchor, List, ThemeClient } from "@ginga-ui/core";
 
 export const dynamic = "force-static";
 
 export default async function Home() {
+  const posts = await getBlogPosts();
+
   const themeClient = new ThemeClient({
     clientType: "openai",
     apiKey: process.env.OPENAI_API_KEY!,
   });
-
-  const posts = await getBlogPosts();
-
   const { CSSCode } = await themeClient.generateTheme(
     `Blog page like below posts: \n\n${posts
       .map((post) => post.content)
@@ -23,7 +22,7 @@ export default async function Home() {
       <List>
         {posts.map((post) => (
           <li key={post.id}>
-            <Link href={`posts/${post.id}`}>{post.title}</Link>
+            <Anchor href={`posts/${post.id}`}>{post.title}</Anchor>
           </li>
         ))}
       </List>

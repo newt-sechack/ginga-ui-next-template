@@ -1,7 +1,6 @@
 import { htmlToComponents } from "#/components/Markdown";
 import { cmsClient, getBlogPosts } from "#/libs/cms";
-import ThemeClient from "@ginga-ui/ai";
-import { Box, Heading, Image, Link } from "@ginga-ui/core";
+import { Anchor, Box, Heading, Image, ThemeClient } from "@ginga-ui/core";
 
 import { Metadata } from "next/types";
 import styles from "./page.module.css";
@@ -71,7 +70,7 @@ export default async function ArticlePage({
       </div>
       <Output />
       <Box className={styles["post-footer"]}>
-        <Link href="/">Back to list</Link>
+        <Anchor href="/">Back to list</Anchor>
       </Box>
     </Box>
   );
