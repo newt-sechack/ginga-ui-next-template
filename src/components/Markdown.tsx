@@ -1,4 +1,11 @@
-import { Heading, Image, Link, List, Paragraph } from "@ginga-ui/core";
+import {
+  Anchor,
+  Heading,
+  Image,
+  List,
+  ListItem,
+  Paragraph,
+} from "@ginga-ui/core";
 import React from "react";
 import * as prod from "react/jsx-runtime";
 import rehypeParse from "rehype-parse";
@@ -36,12 +43,12 @@ const ListWrapper = (props: React.ComponentProps<"ul">) => (
 );
 
 const ListItemWrapper = (props: React.ComponentProps<"li">) => (
-  <List.Item {...props} />
+  <ListItem {...props} />
 );
 
 const AnchorWrapper = (
   props: Omit<React.ComponentProps<"a">, "onFocus" | "onBlur">
-) => <Link {...props} />;
+) => <Anchor {...props} />;
 
 export const htmlToComponents = (html: string) => {
   return unified()
@@ -59,6 +66,7 @@ export const htmlToComponents = (html: string) => {
         h4: HeadingLevel4,
         img: ImageWrapper,
         ul: ListWrapper,
+        li: ListItemWrapper,
         a: AnchorWrapper,
       },
     })
