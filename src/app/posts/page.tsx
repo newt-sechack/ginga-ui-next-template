@@ -1,5 +1,5 @@
 import { getBlogPosts } from "#/libs/cms";
-import { Link, List } from "@ginga-ui";
+import { Anchor, List } from "@ginga-ui/core";
 import { Metadata } from "next";
 
 export const dynamic = "force-static";
@@ -17,7 +17,7 @@ export default async function BlogListPage() {
       <List>
         {posts.map((post) => (
           <li>
-            <Link href={`posts/${post.id}`}>{post.title}</Link>
+            <Anchor href={`posts/${post.id}`}>{post.title}</Anchor>
           </li>
         ))}
       </List>
