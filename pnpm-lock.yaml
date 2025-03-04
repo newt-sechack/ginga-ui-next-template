@@ -9,8 +9,8 @@ importers:
   .:
     dependencies:
       '@ginga-ui/core':
-        specifier: ^0.10.0
-        version: 0.10.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.7.3)
+        specifier: ^0.10.1
+        version: 0.10.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.7.3)
       microcms-js-sdk:
         specifier: ^3.1.2
         version: 3.1.2
@@ -59,6 +59,9 @@ importers:
         version: 5.7.3
 
 packages:
+
+  '@anthropic-ai/sdk@0.39.0':
+    resolution: {integrity: sha512-eMyDIPRZbt1CCLErRCi3exlAvNkBtRe+kW5vvJyef93PmNr/clstYgHhtvmkxN82nlKgzyGPCyGxrm0JQ1ZIdg==}
 
   '@eslint-community/eslint-utils@4.4.1':
     resolution: {integrity: sha512-s3O3waFUrMV8P/XaF/+ZTp1X9XBZW1a4B97ZnjQF2KYWaFD2A8KyFBsrsfSjEmjn3RGWAIuvlneuZm3CUK3jbA==}
@@ -109,108 +112,108 @@ packages:
   '@formatjs/intl-localematcher@0.6.0':
     resolution: {integrity: sha512-4rB4g+3hESy1bHSBG3tDFaMY2CH67iT7yne1e+0CLTsGLDcmoEWWpJjjpWVaYgYfYuohIRuo0E+N536gd2ZHZA==}
 
-  '@ginga-ui/accordion@0.10.0':
-    resolution: {integrity: sha512-P13PEOhBKQZmUrQxQ93DW5MlbGEMNTKCniXYGEDTyCti1VeKAN+4sbxrIMtWlwIdQTB6kZTA9eKmVlbZQspOUQ==}
+  '@ginga-ui/accordion@0.10.1':
+    resolution: {integrity: sha512-9JbXWX1ngixffwX3Tdzy9TnEUd96lBWDPplnj96ZW/wH3WeiLZJuKmQkX7JqVIgy2GU/XDbis4tJicB8Q5npxQ==}
     peerDependencies:
       react: '>=18'
 
-  '@ginga-ui/anchor@0.10.0':
-    resolution: {integrity: sha512-uQ5epHsVHlRVxNUeeiuGaSpv2UJ0Fy+d1lfGBU0hN/4FvLZw3MQiPDnnslHx6VBFViUAOJP8dvR77eNRtgqZDg==}
+  '@ginga-ui/anchor@0.10.1':
+    resolution: {integrity: sha512-INcko8J5xh14AeYJX3aoBgPqYii4qh84I7oLdv8u2lXeB8hepQ/5FqSYjFsZXiSBxho4QdNKyE+htPXp+p3BVQ==}
     peerDependencies:
       react: '>=18'
 
-  '@ginga-ui/box@0.10.0':
-    resolution: {integrity: sha512-4S05LdH7M3M5uGZ+HmibRjMT1M35R63/7jJ13bgMk5G5ztexTNUerVqET/rPU3p02ePwDEuCVyrGK9MPMlv1nQ==}
+  '@ginga-ui/box@0.10.1':
+    resolution: {integrity: sha512-HLBzkiB71yrv1HlN+UGYSD+YmYkh4CsYDAR3jm4x2sINjmKOXtTT4rt3PHy1yuG3WnipZTN8Rbmq88EVKhps2Q==}
     peerDependencies:
       react: '>=18'
 
-  '@ginga-ui/button@0.10.0':
-    resolution: {integrity: sha512-DuxoyggECD5Pxmfn0lUHzsdgT4cqNhbux+PBSOJmOoKHJmyy//wgp5CFaQPh4+/oCCmVZK8f/fOzor/wUC8ZAg==}
+  '@ginga-ui/button@0.10.1':
+    resolution: {integrity: sha512-appn0jmgLOTrgueoo4+mcDskUYO3q0Hg54QN5qRwu1oFnt2EfoXNysgBguDYbUQn3nPkAF/Am/t5Eu1ux7MVvA==}
     peerDependencies:
       react: '>=18'
 
-  '@ginga-ui/card@0.10.0':
-    resolution: {integrity: sha512-stX7Rlli8RAtMpL3KHTMHcSlv42HgoQsEpcWotP0e9MxuUh0xiF+8teUw3h74b/bIOaC9BGkmtbDLt70wbwo6w==}
+  '@ginga-ui/card@0.10.1':
+    resolution: {integrity: sha512-lIKWBHBs3e3XhE41DAcHtvG6vXJjgVfmIBEm9lO4QB6p+P/pKvbQPjwi9sQHwG3rnFDjcKgACjPqwAEvXA3LWw==}
     peerDependencies:
       react: '>=18'
 
-  '@ginga-ui/checkbox@0.10.0':
-    resolution: {integrity: sha512-djWVCeJOTextkeSNaSLdx/jEMBegnut/pvH6X6JjkhCl//+VRfOU5j5Pk/ew29XAsyNo6DYSzSUzrFl7N5BHrg==}
+  '@ginga-ui/checkbox@0.10.1':
+    resolution: {integrity: sha512-bO24+asg3HyhJWAjjCONcWcHWPcG8mQ0B2QtWzTYqsscF2uZgPXuTcLvtgUjGF7VoMuEQdKjiLKKsl1DztRqKw==}
     peerDependencies:
       react: '>=18'
 
-  '@ginga-ui/core@0.10.0':
-    resolution: {integrity: sha512-DOOZ1nOrXT7iXYNZzC0rzT7nhyXKDJYWY1fUqTzMupJm8ipJoHzHzjqvqKxh6lNsP5rTKOMXKl4hQRB9snmY5g==}
+  '@ginga-ui/core@0.10.1':
+    resolution: {integrity: sha512-GljQ6umifgKPahdJB1vzXtTmF7CGgbLmRR7qndampRIwaiUky3WJUSLksryEsyKynRF0qkpsm4j3+5U9MU5LPw==}
     peerDependencies:
       react: '>=18'
 
-  '@ginga-ui/dialog@0.10.0':
-    resolution: {integrity: sha512-zM4WOsrFGxWnyQRgc57mr4qLkTzKKvw7qw0dlp/B/fG9jBbl8a7Xx/GliOuf+CWN7+/uYbE+JEFXx6tQJNFgyA==}
+  '@ginga-ui/dialog@0.10.1':
+    resolution: {integrity: sha512-bP6mYYjSK8JDiPJF32gFwDg+BNlEd2yCp8jw71ISww+XT+Us6wyDz3sYRxPZRxtnm4hsxciohdZLrGc+G2CLpw==}
     peerDependencies:
       react: '>=18'
 
-  '@ginga-ui/form-control@0.10.0':
-    resolution: {integrity: sha512-3nAOPNISYd9UCA+mi1lxYaQ0PidcgOOO46wA2JwCSFn/8TF0XaqvGKAu2xuX457NuSOxnrwPQgvydJrg4QtMDA==}
+  '@ginga-ui/form-control@0.10.1':
+    resolution: {integrity: sha512-2/g8IJW5QIl4cxC+ub5NwdaXYDkiBcN8d/tShts+agOfXYFgfEyI7kMFKnL2QAt4ZymHM1l/IGvX5ac7eow6fQ==}
     peerDependencies:
       react: '>=18'
 
-  '@ginga-ui/heading@0.10.0':
-    resolution: {integrity: sha512-Ql9CI9pcgO9R9Tc6gjYqt5DAq5f1Yu0+U1FmWppnArQSBZWF0M5es7yr5JczhOfPAh9PPbtQ+RFptOmljQRjJQ==}
+  '@ginga-ui/heading@0.10.1':
+    resolution: {integrity: sha512-3OVaz73daBHYmOFirJP7R93VKWR7c0FbToHY0YznW/fIsTGLMBn9zXKu7VPZ9ZHgXTlvZXBVpdahvPUnvtY4nA==}
     peerDependencies:
       react: '>=18'
 
-  '@ginga-ui/image@0.10.0':
-    resolution: {integrity: sha512-U2yGGrwOGahdq193Xer1a0MShLVPU9mfSjytSrdFtESx/ZEjZUbQZsApuluEt+lk2s2lAtLFKWsUg8Y6yzh9XQ==}
+  '@ginga-ui/image@0.10.1':
+    resolution: {integrity: sha512-wq/xv1vEVTCCtPl0jdPP7dYy21wNIDnMagZZ9kRp88zObrIlhWDQcu9bLzmJwfM32uLvG/GNWEfWj2rYhC6+lw==}
     peerDependencies:
       react: '>=18'
 
-  '@ginga-ui/input@0.10.0':
-    resolution: {integrity: sha512-d1nsPNK0UbIgUb1Zwn0BOoR05yiklWwxlE4ualPIbh2wrhNUkBdaVeTiJdTO1gOJUhFU5BJNQuExiRvFOqCl5w==}
+  '@ginga-ui/input@0.10.1':
+    resolution: {integrity: sha512-kwuVwsUh6po02V/pwVOxBllYlkuuPQJU+6ytutCBPTaOVeXr4HHu5n2BALxj9Y8VU8P8I1XZY5FOvtJk4kgghw==}
     peerDependencies:
       react: '>=18'
 
-  '@ginga-ui/list@0.10.0':
-    resolution: {integrity: sha512-bt/k6mNAj0Uj8xIfjzaj8GjyCzSEiEXX7rhHd7tWoplaXZioip9y737vYlO5yiPLQ27rmMtxvpPfqCKPdQ3S4g==}
+  '@ginga-ui/list@0.10.1':
+    resolution: {integrity: sha512-/liNvwJoSnRXrwYT1pWyOisMy88pkyo8exoKA7Uk2E9dhDjPvVPT2nIVgLvF85LXHFfBYOxB9QMOa93CXWUd+g==}
     peerDependencies:
       react: '>=18'
 
-  '@ginga-ui/paragraph@0.10.0':
-    resolution: {integrity: sha512-q4BhVhhuAJoPHbe9KQlnN0HjpU/8zoRjFXXbvuU1egiRpJ0D2vdpdJY+cmGXFrGljWzt0rzuJ+q9TaCXRQ37jQ==}
+  '@ginga-ui/paragraph@0.10.1':
+    resolution: {integrity: sha512-0gPxshlhPX0AMjdv7DU+066FpG+UHXDkofGpKX/isoKtq7R/v9RVg3ed323G8oSXT7dHq/UkLhn6gkgHbNYCOw==}
     peerDependencies:
       react: '>=18'
 
-  '@ginga-ui/radio@0.10.0':
-    resolution: {integrity: sha512-JBqR7uyGZlRHUAvHNjMMwdjkhDj/BRwKPLYLXpWK06JjHmjj2NrtG6fwooQIdRysy4fBl4sPZ2ZFJ0SlhBZx6g==}
+  '@ginga-ui/radio@0.10.1':
+    resolution: {integrity: sha512-rGbencncepemfipN1NaTnqoTMDNAoy+f+iRNHlWGFWFzfBk9lzeLASBXjyUemfPfQlLM44d8qdS5Zfm1Jj3Xlw==}
     peerDependencies:
       react: '>=18'
 
-  '@ginga-ui/select@0.10.0':
-    resolution: {integrity: sha512-vu1ovN4gyRE9yDfPnfyyNbf3RBqTjklClCYI2uRmZ/nK8RR1gw7mzuAR/FqG6BfnZEdqz1YL7CSyAihAiququA==}
+  '@ginga-ui/select@0.10.1':
+    resolution: {integrity: sha512-mVEpkZCFBSfyYT9MLVcfwclYe2XEMhoQqsCwqrAia1D4S+yOgIsKPRSHGI6nDAbpUBH0QCleDBuRjD4JH7oQ1Q==}
     peerDependencies:
       react: '>=18'
 
-  '@ginga-ui/slider@0.10.0':
-    resolution: {integrity: sha512-V9kySp622haeTRypwqD+Ew82hn19pA/euTewnZ/B8ciwP9JQKqkTeOh0GrbpLqMTmcuOZasyg4rGxHCX2nEKtg==}
+  '@ginga-ui/slider@0.10.1':
+    resolution: {integrity: sha512-jz46A/bVaCvCQjxFOVaYpd64eMIK0d2nV90ewegiBWe7EcCZO3+sM0urCzPsb+nTdFWtpPD9whRjw6HJec3nUA==}
     peerDependencies:
       react: '>=18'
 
-  '@ginga-ui/switch@0.10.0':
-    resolution: {integrity: sha512-cYymP802oNAb61hd/t5wmmMr7D7rwqSfQAxLMnOkEzk2nscYKgQJbSOkhYbG47ndMrtiVE6ge8qg16IEdqj/Aw==}
+  '@ginga-ui/switch@0.10.1':
+    resolution: {integrity: sha512-//jU5qWGCF8+3PrezzPYESrFAVkpmVXpqKCDX0uefgXNaPc3rX8JHA71UgCvDlBj9haXOYGwFFu2mtnTVlvqUg==}
     peerDependencies:
       react: '>=18'
 
-  '@ginga-ui/tab@0.10.0':
-    resolution: {integrity: sha512-28J9kcJcXN1qK8ydVHmIzFGGC4qSPtr4tJa4nPnOELRQLI7MhZWvFH9fNwgUpBSuWAhvEoTCA1H9cmaPLoSdDA==}
+  '@ginga-ui/tab@0.10.1':
+    resolution: {integrity: sha512-1B3eIT0GtreKlXw+n8fhmhdFP1irSk+jyRS6HSzddDZokEl6caUamZxVbSKcQ34ZXYj7A+CbBTTKJDJe/79Qrw==}
     peerDependencies:
       react: '>=18'
 
-  '@ginga-ui/table@0.10.0':
-    resolution: {integrity: sha512-Fvlrp34jIZyAGGC7S6is6nWNScxEm6qnTJYvUMlnGtMsb7HPPqbOnFUWVB4vZdcOntBfYY3vahtWAo3RHFhSxg==}
+  '@ginga-ui/table@0.10.1':
+    resolution: {integrity: sha512-onLx7vQiVLphR4ikkSbys8V+yYzCxsUGpZZ2dvXlBm7SJ5tRgYOoAmwn+wTKhuJC6ouVaRLiD4N6CWX9/fGi+g==}
     peerDependencies:
       react: '>=18'
 
-  '@ginga-ui/utils@0.10.0':
-    resolution: {integrity: sha512-porRB4F8Ng7Sq40FOzA6MvOJ3CXzKtxmAlNgYi19VQEXlZLsVNzvW9wf+Hq3N+lzuoHQ+t9RwP+gu413pcvq5A==}
+  '@ginga-ui/utils@0.11.0':
+    resolution: {integrity: sha512-zFlilRTsvCEyUD8/dsA52uPShaEfZxEYwtP4idoj3sEZyMTMS8Ppt4kTFic2hVnjRJMvJMpVwaJvMdi7rAAFLw==}
     peerDependencies:
       react: '>=18'
 
@@ -2507,6 +2510,18 @@ packages:
 
 snapshots:
 
+  '@anthropic-ai/sdk@0.39.0':
+    dependencies:
+      '@types/node': 18.19.76
+      '@types/node-fetch': 2.6.12
+      abort-controller: 3.0.0
+      agentkeepalive: 4.6.0
+      form-data-encoder: 1.7.2
+      formdata-node: 4.4.1
+      node-fetch: 2.7.0
+    transitivePeerDependencies:
+      - encoding
+
   '@eslint-community/eslint-utils@4.4.1(eslint@9.21.0)':
     dependencies:
       eslint: 9.21.0
@@ -2575,9 +2590,9 @@ snapshots:
     dependencies:
       tslib: 2.8.1
 
-  '@ginga-ui/accordion@0.10.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.7.3)':
+  '@ginga-ui/accordion@0.10.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.7.3)':
     dependencies:
-      '@ginga-ui/utils': 0.10.0(react@18.3.1)(typescript@5.7.3)
+      '@ginga-ui/utils': 0.11.0(react@18.3.1)(typescript@5.7.3)
       react: 18.3.1
       react-aria-components: 1.6.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
     transitivePeerDependencies:
@@ -2587,9 +2602,9 @@ snapshots:
       - ws
       - zod
 
-  '@ginga-ui/anchor@0.10.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.7.3)':
+  '@ginga-ui/anchor@0.10.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.7.3)':
     dependencies:
-      '@ginga-ui/utils': 0.10.0(react@18.3.1)(typescript@5.7.3)
+      '@ginga-ui/utils': 0.11.0(react@18.3.1)(typescript@5.7.3)
       react: 18.3.1
       react-aria-components: 1.6.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
     transitivePeerDependencies:
@@ -2599,9 +2614,9 @@ snapshots:
       - ws
       - zod
 
-  '@ginga-ui/box@0.10.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.7.3)':
+  '@ginga-ui/box@0.10.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.7.3)':
     dependencies:
-      '@ginga-ui/utils': 0.10.0(react@18.3.1)(typescript@5.7.3)
+      '@ginga-ui/utils': 0.11.0(react@18.3.1)(typescript@5.7.3)
       react: 18.3.1
       react-aria-components: 1.6.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
     transitivePeerDependencies:
@@ -2611,9 +2626,9 @@ snapshots:
       - ws
       - zod
 
-  '@ginga-ui/button@0.10.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.7.3)':
+  '@ginga-ui/button@0.10.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.7.3)':
     dependencies:
-      '@ginga-ui/utils': 0.10.0(react@18.3.1)(typescript@5.7.3)
+      '@ginga-ui/utils': 0.11.0(react@18.3.1)(typescript@5.7.3)
       react: 18.3.1
       react-aria-components: 1.6.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
     transitivePeerDependencies:
@@ -2623,9 +2638,9 @@ snapshots:
       - ws
       - zod
 
-  '@ginga-ui/card@0.10.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.7.3)':
+  '@ginga-ui/card@0.10.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.7.3)':
     dependencies:
-      '@ginga-ui/utils': 0.10.0(react@18.3.1)(typescript@5.7.3)
+      '@ginga-ui/utils': 0.11.0(react@18.3.1)(typescript@5.7.3)
       react: 18.3.1
       react-aria-components: 1.6.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
     transitivePeerDependencies:
@@ -2635,9 +2650,9 @@ snapshots:
       - ws
       - zod
 
-  '@ginga-ui/checkbox@0.10.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.7.3)':
+  '@ginga-ui/checkbox@0.10.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.7.3)':
     dependencies:
-      '@ginga-ui/utils': 0.10.0(react@18.3.1)(typescript@5.7.3)
+      '@ginga-ui/utils': 0.11.0(react@18.3.1)(typescript@5.7.3)
       react: 18.3.1
       react-aria-components: 1.6.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
     transitivePeerDependencies:
@@ -2647,28 +2662,28 @@ snapshots:
       - ws
       - zod
 
-  '@ginga-ui/core@0.10.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.7.3)':
+  '@ginga-ui/core@0.10.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.7.3)':
     dependencies:
-      '@ginga-ui/accordion': 0.10.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.7.3)
-      '@ginga-ui/anchor': 0.10.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.7.3)
-      '@ginga-ui/box': 0.10.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.7.3)
-      '@ginga-ui/button': 0.10.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.7.3)
-      '@ginga-ui/card': 0.10.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.7.3)
-      '@ginga-ui/checkbox': 0.10.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.7.3)
-      '@ginga-ui/dialog': 0.10.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.7.3)
-      '@ginga-ui/form-control': 0.10.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.7.3)
-      '@ginga-ui/heading': 0.10.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.7.3)
-      '@ginga-ui/image': 0.10.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.7.3)
-      '@ginga-ui/input': 0.10.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.7.3)
-      '@ginga-ui/list': 0.10.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.7.3)
-      '@ginga-ui/paragraph': 0.10.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.7.3)
-      '@ginga-ui/radio': 0.10.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.7.3)
-      '@ginga-ui/select': 0.10.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.7.3)
-      '@ginga-ui/slider': 0.10.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.7.3)
-      '@ginga-ui/switch': 0.10.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.7.3)
-      '@ginga-ui/tab': 0.10.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.7.3)
-      '@ginga-ui/table': 0.10.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.7.3)
-      '@ginga-ui/utils': 0.10.0(react@18.3.1)(typescript@5.7.3)
+      '@ginga-ui/accordion': 0.10.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.7.3)
+      '@ginga-ui/anchor': 0.10.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.7.3)
+      '@ginga-ui/box': 0.10.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.7.3)
+      '@ginga-ui/button': 0.10.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.7.3)
+      '@ginga-ui/card': 0.10.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.7.3)
+      '@ginga-ui/checkbox': 0.10.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.7.3)
+      '@ginga-ui/dialog': 0.10.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.7.3)
+      '@ginga-ui/form-control': 0.10.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.7.3)
+      '@ginga-ui/heading': 0.10.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.7.3)
+      '@ginga-ui/image': 0.10.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.7.3)
+      '@ginga-ui/input': 0.10.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.7.3)
+      '@ginga-ui/list': 0.10.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.7.3)
+      '@ginga-ui/paragraph': 0.10.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.7.3)
+      '@ginga-ui/radio': 0.10.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.7.3)
+      '@ginga-ui/select': 0.10.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.7.3)
+      '@ginga-ui/slider': 0.10.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.7.3)
+      '@ginga-ui/switch': 0.10.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.7.3)
+      '@ginga-ui/tab': 0.10.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.7.3)
+      '@ginga-ui/table': 0.10.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.7.3)
+      '@ginga-ui/utils': 0.11.0(react@18.3.1)(typescript@5.7.3)
       react: 18.3.1
     transitivePeerDependencies:
       - encoding
@@ -2677,21 +2692,9 @@ snapshots:
       - ws
       - zod
 
-  '@ginga-ui/dialog@0.10.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.7.3)':
+  '@ginga-ui/dialog@0.10.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.7.3)':
     dependencies:
-      '@ginga-ui/utils': 0.10.0(react@18.3.1)(typescript@5.7.3)
-      react: 18.3.1
-      react-aria-components: 1.6.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-    transitivePeerDependencies:
-      - encoding
-      - react-dom
-      - typescript
-      - ws
-      - zod
-
-  '@ginga-ui/form-control@0.10.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.7.3)':
-    dependencies:
-      '@ginga-ui/utils': 0.10.0(react@18.3.1)(typescript@5.7.3)
+      '@ginga-ui/utils': 0.11.0(react@18.3.1)(typescript@5.7.3)
       react: 18.3.1
       react-aria-components: 1.6.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
     transitivePeerDependencies:
@@ -2701,9 +2704,9 @@ snapshots:
       - ws
       - zod
 
-  '@ginga-ui/heading@0.10.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.7.3)':
+  '@ginga-ui/form-control@0.10.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.7.3)':
     dependencies:
-      '@ginga-ui/utils': 0.10.0(react@18.3.1)(typescript@5.7.3)
+      '@ginga-ui/utils': 0.11.0(react@18.3.1)(typescript@5.7.3)
       react: 18.3.1
       react-aria-components: 1.6.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
     transitivePeerDependencies:
@@ -2713,9 +2716,9 @@ snapshots:
       - ws
       - zod
 
-  '@ginga-ui/image@0.10.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.7.3)':
+  '@ginga-ui/heading@0.10.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.7.3)':
     dependencies:
-      '@ginga-ui/utils': 0.10.0(react@18.3.1)(typescript@5.7.3)
+      '@ginga-ui/utils': 0.11.0(react@18.3.1)(typescript@5.7.3)
       react: 18.3.1
       react-aria-components: 1.6.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
     transitivePeerDependencies:
@@ -2725,9 +2728,9 @@ snapshots:
       - ws
       - zod
 
-  '@ginga-ui/input@0.10.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.7.3)':
+  '@ginga-ui/image@0.10.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.7.3)':
     dependencies:
-      '@ginga-ui/utils': 0.10.0(react@18.3.1)(typescript@5.7.3)
+      '@ginga-ui/utils': 0.11.0(react@18.3.1)(typescript@5.7.3)
       react: 18.3.1
       react-aria-components: 1.6.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
     transitivePeerDependencies:
@@ -2737,9 +2740,9 @@ snapshots:
       - ws
       - zod
 
-  '@ginga-ui/list@0.10.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.7.3)':
+  '@ginga-ui/input@0.10.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.7.3)':
     dependencies:
-      '@ginga-ui/utils': 0.10.0(react@18.3.1)(typescript@5.7.3)
+      '@ginga-ui/utils': 0.11.0(react@18.3.1)(typescript@5.7.3)
       react: 18.3.1
       react-aria-components: 1.6.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
     transitivePeerDependencies:
@@ -2749,9 +2752,9 @@ snapshots:
       - ws
       - zod
 
-  '@ginga-ui/paragraph@0.10.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.7.3)':
+  '@ginga-ui/list@0.10.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.7.3)':
     dependencies:
-      '@ginga-ui/utils': 0.10.0(react@18.3.1)(typescript@5.7.3)
+      '@ginga-ui/utils': 0.11.0(react@18.3.1)(typescript@5.7.3)
       react: 18.3.1
       react-aria-components: 1.6.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
     transitivePeerDependencies:
@@ -2761,9 +2764,9 @@ snapshots:
       - ws
       - zod
 
-  '@ginga-ui/radio@0.10.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.7.3)':
+  '@ginga-ui/paragraph@0.10.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.7.3)':
     dependencies:
-      '@ginga-ui/utils': 0.10.0(react@18.3.1)(typescript@5.7.3)
+      '@ginga-ui/utils': 0.11.0(react@18.3.1)(typescript@5.7.3)
       react: 18.3.1
       react-aria-components: 1.6.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
     transitivePeerDependencies:
@@ -2773,9 +2776,9 @@ snapshots:
       - ws
       - zod
 
-  '@ginga-ui/select@0.10.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.7.3)':
+  '@ginga-ui/radio@0.10.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.7.3)':
     dependencies:
-      '@ginga-ui/utils': 0.10.0(react@18.3.1)(typescript@5.7.3)
+      '@ginga-ui/utils': 0.11.0(react@18.3.1)(typescript@5.7.3)
       react: 18.3.1
       react-aria-components: 1.6.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
     transitivePeerDependencies:
@@ -2785,9 +2788,9 @@ snapshots:
       - ws
       - zod
 
-  '@ginga-ui/slider@0.10.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.7.3)':
+  '@ginga-ui/select@0.10.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.7.3)':
     dependencies:
-      '@ginga-ui/utils': 0.10.0(react@18.3.1)(typescript@5.7.3)
+      '@ginga-ui/utils': 0.11.0(react@18.3.1)(typescript@5.7.3)
       react: 18.3.1
       react-aria-components: 1.6.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
     transitivePeerDependencies:
@@ -2797,9 +2800,9 @@ snapshots:
       - ws
       - zod
 
-  '@ginga-ui/switch@0.10.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.7.3)':
+  '@ginga-ui/slider@0.10.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.7.3)':
     dependencies:
-      '@ginga-ui/utils': 0.10.0(react@18.3.1)(typescript@5.7.3)
+      '@ginga-ui/utils': 0.11.0(react@18.3.1)(typescript@5.7.3)
       react: 18.3.1
       react-aria-components: 1.6.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
     transitivePeerDependencies:
@@ -2809,9 +2812,9 @@ snapshots:
       - ws
       - zod
 
-  '@ginga-ui/tab@0.10.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.7.3)':
+  '@ginga-ui/switch@0.10.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.7.3)':
     dependencies:
-      '@ginga-ui/utils': 0.10.0(react@18.3.1)(typescript@5.7.3)
+      '@ginga-ui/utils': 0.11.0(react@18.3.1)(typescript@5.7.3)
       react: 18.3.1
       react-aria-components: 1.6.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
     transitivePeerDependencies:
@@ -2821,10 +2824,9 @@ snapshots:
       - ws
       - zod
 
-  '@ginga-ui/table@0.10.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.7.3)':
+  '@ginga-ui/tab@0.10.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.7.3)':
     dependencies:
-      '@ginga-ui/checkbox': 0.10.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.7.3)
-      '@ginga-ui/utils': 0.10.0(react@18.3.1)(typescript@5.7.3)
+      '@ginga-ui/utils': 0.11.0(react@18.3.1)(typescript@5.7.3)
       react: 18.3.1
       react-aria-components: 1.6.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
     transitivePeerDependencies:
@@ -2834,8 +2836,22 @@ snapshots:
       - ws
       - zod
 
-  '@ginga-ui/utils@0.10.0(react@18.3.1)(typescript@5.7.3)':
+  '@ginga-ui/table@0.10.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.7.3)':
     dependencies:
+      '@ginga-ui/checkbox': 0.10.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.7.3)
+      '@ginga-ui/utils': 0.11.0(react@18.3.1)(typescript@5.7.3)
+      react: 18.3.1
+      react-aria-components: 1.6.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+    transitivePeerDependencies:
+      - encoding
+      - react-dom
+      - typescript
+      - ws
+      - zod
+
+  '@ginga-ui/utils@0.11.0(react@18.3.1)(typescript@5.7.3)':
+    dependencies:
+      '@anthropic-ai/sdk': 0.39.0
       '@google/generative-ai': 0.21.0
       chroma-js: 3.1.2
       openai: 4.86.1
