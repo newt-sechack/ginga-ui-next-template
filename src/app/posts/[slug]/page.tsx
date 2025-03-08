@@ -61,7 +61,7 @@ export default async function ArticlePage({
 
   return (
     <>
-      <style suppressHydrationWarning>{CSSCode}</style>
+      <style dangerouslySetInnerHTML={{ __html: CSSCode }} />
       <Image
         src={post.eyecatch.url}
         alt={post.title}

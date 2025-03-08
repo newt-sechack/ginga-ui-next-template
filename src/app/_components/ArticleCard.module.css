@@ -1,5 +1,6 @@
 .root {
   display: flex;
+  gap: 1rem;
   flex-direction: row;
   padding: 1rem;
   background-color: var(--color-background);
@@ -13,7 +14,7 @@
   overflow: hidden;
 }
 
-.image-area  {
+.image-area {
   width: 30%;
 }
 

@@ -1,5 +1,6 @@
 import ArticleCard from "#/app/_components/ArticleCard";
 import { ArticleProps } from "#/libs/cms";
+import { Heading } from "@ginga-ui/core";
 
 import styles from "./ArticleList.module.css";
 
@@ -9,11 +10,14 @@ type ArticleListProps = {
 
 const ArticleList: React.FC<ArticleListProps> = ({ posts }) => {
   return (
-    <ul className={styles.root}>
-      {posts.map((item) => (
-        <ArticleCard key={item.id} {...item} />
-      ))}
-    </ul>
+    <>
+      <Heading level="h1">All Posts</Heading>
+      <ul className={styles.root}>
+        {posts.map((item) => (
+          <ArticleCard key={item.id} {...item} />
+        ))}
+      </ul>
+    </>
   );
 };
 
