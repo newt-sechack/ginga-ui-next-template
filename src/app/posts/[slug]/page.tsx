@@ -2,6 +2,7 @@ import { htmlToComponents } from "#/components/Markdown";
 import { cmsClient, getBlogPosts } from "#/libs/cms";
 import { Anchor, Box, Heading, Image, ThemeClient } from "@ginga-ui/core";
 
+import { notFound } from "next/navigation";
 import { Metadata } from "next/types";
 import styles from "./page.module.css";
 
@@ -11,7 +12,15 @@ export async function generateMetadata({
   params: Promise<{ slug: string }>;
 }): Promise<Metadata> {
   const { slug } = await params;
+
+  if (slug === "%5Bslug%5D") {
+    notFound();
+  }
+
   const post = await await cmsClient.get({
+    customRequestInit: {
+      cache: "no-cache",
+    },
     endpoint: "blogs",
     contentId: slug,
   });
@@ -33,6 +42,12 @@ export default async function ArticlePage({
   params: Promise<{ slug: string }>;
 }) {
   const { slug } = await params;
+
+  if (slug === "%5Bslug%5D") {
+    // 何故か`[slug]`がそのまま渡ってくるので、その場合は404を返す
+    notFound();
+  }
+
   const post = await await cmsClient.get({
     customRequestInit: {
       cache: "no-cache",
@@ -40,6 +55,10 @@ export default async function ArticlePage({
     endpoint: "blogs",
     contentId: slug,
   });
+
+  if (!post) {
+    notFound();
+  }
 
   const themeClient = new ThemeClient({
     clientType: "openai",

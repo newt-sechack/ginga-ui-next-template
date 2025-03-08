@@ -19,7 +19,6 @@ export async function getBlogPosts(): Promise<Props[]> {
     endpoint: "blogs",
     queries: {
       fields: "id,title,content",
-      limit: 5,
     },
   });
   return data.contents;
