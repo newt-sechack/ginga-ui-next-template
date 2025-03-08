@@ -1,10 +1,13 @@
 import { htmlToComponents } from "#/components/Markdown";
-import { cmsClient } from "#/libs/cms";
+import { cmsClient, getBlogPosts } from "#/libs/cms";
 import { Anchor, Box, Heading, Image, ThemeClient } from "@ginga-ui/core";
 
 import { notFound } from "next/navigation";
 import { Metadata } from "next/types";
 import styles from "./page.module.css";
+
+export const dynamic = "auto";
+export const revalidate = 3600;
 
 export async function generateMetadata({
   params,
@@ -14,9 +17,6 @@ export async function generateMetadata({
   const { slug } = await params;
 
   const post = await await cmsClient.get({
-    customRequestInit: {
-      cache: "no-cache",
-    },
     endpoint: "blogs",
     contentId: slug,
   });
@@ -40,9 +40,6 @@ export default async function ArticlePage({
   const { slug } = await params;
 
   const post = await await cmsClient.get({
-    customRequestInit: {
-      cache: "no-cache",
-    },
     endpoint: "blogs",
     contentId: slug,
   });
@@ -84,4 +81,12 @@ export default async function ArticlePage({
       </Box>
     </>
   );
+}
+
+export async function generateStaticParams() {
+  const posts = await getBlogPosts();
+
+  return posts.map((post) => ({
+    slug: post.id,
+  }));
 }

@@ -17,9 +17,6 @@ export type ArticleProps = {
 
 export async function getBlogPosts(): Promise<ArticleProps[]> {
   const data = await cmsClient.getAllContents({
-    customRequestInit: {
-      cache: "no-cache",
-    },
     endpoint: "blogs",
   });
 
