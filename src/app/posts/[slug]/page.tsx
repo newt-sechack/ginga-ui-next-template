@@ -1,5 +1,5 @@
 import { htmlToComponents } from "#/components/Markdown";
-import { cmsClient, getBlogPosts } from "#/libs/cms";
+import { cmsClient } from "#/libs/cms";
 import { Anchor, Box, Heading, Image, ThemeClient } from "@ginga-ui/core";
 
 import { notFound } from "next/navigation";
@@ -12,10 +12,6 @@ export async function generateMetadata({
   params: Promise<{ slug: string }>;
 }): Promise<Metadata> {
   const { slug } = await params;
-
-  if (slug === "%5Bslug%5D") {
-    notFound();
-  }
 
   const post = await await cmsClient.get({
     customRequestInit: {
@@ -42,11 +38,6 @@ export default async function ArticlePage({
   params: Promise<{ slug: string }>;
 }) {
   const { slug } = await params;
-
-  if (slug === "%5Bslug%5D") {
-    // 何故か`[slug]`がそのまま渡ってくるので、その場合は404を返す
-    notFound();
-  }
 
   const post = await await cmsClient.get({
     customRequestInit: {
@@ -93,12 +84,4 @@ export default async function ArticlePage({
       </Box>
     </Box>
   );
-}
-
-export async function generateStaticParams() {
-  const posts = await getBlogPosts();
-
-  return posts.map((item) => ({
-    slug: item.id,
-  }));
 }
