@@ -1,12 +1,9 @@
-import { Heading } from "@ginga-ui/core";
-
 import "@ginga-ui/core/index.css";
 import "@ginga-ui/core/variables.css";
 
 import type { Metadata } from "next";
 
-import Search from "./_components/Search";
-import styles from "./layout.module.css";
+import Header from "./_components/Header";
 import "./styles.css";
 
 export const metadata: Metadata = {
@@ -25,13 +22,8 @@ export default async function RootLayout({
   return (
     <html lang="ja">
       <body>
-        <header className={styles.header}>
-          <Heading level="h1" className={styles.title}>
-            Ginga Blog
-          </Heading>
-          <Search />
-        </header>
-        {children}
+        <Header />
+        <main>{children}</main>
       </body>
     </html>
   );

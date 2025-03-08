@@ -5,21 +5,23 @@ export const cmsClient = createClient({
   apiKey: process.env.MICROCMS_API_KEY!,
 });
 
-type Props = {
-  id: string;
+export type ArticleProps = {
   title: string;
+  body: string;
   content: string;
+  id: string;
+  eyecatch: {
+    url: string;
+  };
 };
 
-export async function getBlogPosts(): Promise<Props[]> {
-  const data = await cmsClient.getList({
+export async function getBlogPosts(): Promise<ArticleProps[]> {
+  const data = await cmsClient.getAllContents({
     customRequestInit: {
       cache: "no-cache",
     },
     endpoint: "blogs",
-    queries: {
-      fields: "id,title,content",
-    },
   });
-  return data.contents;
+
+  return data;
 }

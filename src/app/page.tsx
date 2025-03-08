@@ -1,5 +1,6 @@
 import { getBlogPosts } from "#/libs/cms";
-import { Anchor, List, ThemeClient } from "@ginga-ui/core";
+import { ThemeClient } from "@ginga-ui/core";
+import ArticleList from "./_components/ArticleList";
 
 export const dynamic = "force-static";
 
@@ -19,13 +20,7 @@ export default async function Home() {
   return (
     <>
       <style suppressHydrationWarning>{CSSCode}</style>
-      <List>
-        {posts.map((post) => (
-          <li key={post.id}>
-            <Anchor href={`posts/${post.id}`}>{post.title}</Anchor>
-          </li>
-        ))}
-      </List>
+      <ArticleList posts={posts} />
     </>
   );
 }

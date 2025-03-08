@@ -60,7 +60,7 @@ export default async function ArticlePage({
   const Output = () => htmlToComponents(post.content);
 
   return (
-    <Box>
+    <>
       <style suppressHydrationWarning>{CSSCode}</style>
       <Image
         src={post.eyecatch.url}
@@ -82,6 +82,6 @@ export default async function ArticlePage({
       <Box className={styles["post-footer"]}>
         <Anchor href="/">Back to list</Anchor>
       </Box>
-    </Box>
+    </>
   );
 }
