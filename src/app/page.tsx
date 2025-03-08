@@ -2,8 +2,7 @@ import { getBlogPosts } from "#/libs/cms";
 import { ThemeClient } from "@ginga-ui/core";
 import ArticleList from "./_components/ArticleList";
 
-export const dynamic = "auto";
-export const revalidate = 3600;
+export const dynamic = "force-static";
 
 export default async function Home() {
   const posts = await getBlogPosts();

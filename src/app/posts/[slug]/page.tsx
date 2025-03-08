@@ -6,8 +6,7 @@ import { notFound } from "next/navigation";
 import { Metadata } from "next/types";
 import styles from "./page.module.css";
 
-export const dynamic = "auto";
-export const revalidate = 3600;
+export const dynamic = "force-static";
 
 export async function generateMetadata({
   params,
